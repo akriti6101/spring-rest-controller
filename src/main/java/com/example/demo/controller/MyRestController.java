@@ -19,7 +19,7 @@ public class MyRestController {
 	public String message() {
 		return "Hello World!";
 	}
-	@RequestMapping("/showData")
+	@GetMapping("/showData")
 	public String showData(Model model) {
 		List<User> users=userService.showData();
 		String stUsers="";
